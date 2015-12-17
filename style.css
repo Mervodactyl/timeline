@@ -1,0 +1,31 @@
+/*=== Styling for 'timeline' repo ===*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F5A9; /* yellow */
+}
+
+section {
+  overflow: auto;
+  height: 70vh;
+  background-color: #5882FA; /* med blue */
+}
+
+div {
+  margin-top: 25vh;
+  height: 50px;
+  background-color: pink;
+}
+
+footer {
+  height: 30vh;
+  background-color: orange;
+}
