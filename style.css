@@ -13,18 +13,26 @@ body {
   background-color: #F2F5A9; /* yellow */
 }
 
-section {
+main {
   overflow: auto;
   height: 70vh;
   background-color: #5882FA; /* med blue */
 }
 
-div {
+.timeline-container {
   margin-top: 25vh;
   height: 50px;
   background-color: pink;
 }
 
+.timeline { /* ol */
+  list-style-type: none;
+  background-color: red;
+}
+
+li {
+  display: inline-block;
+}
 footer {
   height: 30vh;
   background-color: orange;
