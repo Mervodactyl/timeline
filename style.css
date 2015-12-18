@@ -7,6 +7,7 @@
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
        -o-box-sizing: border-box;
+
 }
 
 body {
@@ -25,6 +26,7 @@ main {
 }
 
 .timeline { /* ol */
+  overflow: none;
   position: relative;
   margin-top: 20vh;
   height: 35vh;
@@ -35,25 +37,58 @@ main {
 .timeline:before {
   position: absolute;
   top: 50vh; /*left: 50%; */
-  left: 4vw;
+  left: 1vw;
   content: " ";
   display: block;
   height: 15px; /* width: 6px; */
-  width: 90vw; /*  height: 100%; */
+  width: 96vw; /*  height: 100%; */
   margin-top: -40vh;
   background: green;
-
+    overflow: auto;
 }
 
-
-
-
-
-
-
-li {
+.timeline li {
   display: inline-block;
+  position: relative;
+  width: 100px;
+  text-align: left;
+  /*padding: ;*/
 }
+
+.timeline li:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.direction-top {
+  /*position: relative;*/
+/*  width: 100px;  300px */
+/*  float: top; /* left */
+  /*text-align: left;*/
+  background-color: pink;
+}
+
+.direction-bottom {
+  /*position: relative;*/
+/*  width: 100px; */
+  /*float: bottom;*/
+  /*text-align: right;*/
+  background-color: yellow;
+}
+
+#marker-one {
+  text-align: right;
+  margin: 15vh;
+  /*margin-top: 50px;*/
+}
+
+#marker-2 {
+  margin: -40px;
+}
+
 footer {
   height: 30vh;
   background-color: orange;
